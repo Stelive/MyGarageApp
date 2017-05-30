@@ -21,7 +21,23 @@ class MyGarageAppTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testLogin() {
+        
+        let expect = expectation(description: "...")
+        
+        let a = AutenticationService(user: "Stelive", password: "Admin")
+        a.checkUser() { result in
+            XCTAssert(result == true)
+            XCTAssertTrue(result, "result deve essere true")
+            
+            
+            expect.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5) { error in
+            // ...
+        }
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

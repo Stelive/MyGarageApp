@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E054FA81ED4E8CB0010A812 /* error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E054FA71ED4E8CB0010A812 /* error.swift */; };
+		4E31EB9C1ED5D85200FF8F8C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E31EB9B1ED5D85200FF8F8C /* libsqlite3.tbd */; };
+		4E6510CB1ED6BBD000A41F62 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6510CA1ED6BBD000A41F62 /* Register.swift */; };
+		4E80A3911ED5CC97002EBD85 /* connectionDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80A3901ED5CC97002EBD85 /* connectionDB.swift */; };
 		6F0CD0FB1EA65B7D00933263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CD0FA1EA65B7D00933263 /* AppDelegate.swift */; };
 		6F0CD0FD1EA65B7D00933263 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CD0FC1EA65B7D00933263 /* ViewController.swift */; };
 		6F0CD1001EA65B7D00933263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F0CD0FE1EA65B7D00933263 /* Main.storyboard */; };
 		6F0CD1021EA65B7D00933263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F0CD1011EA65B7D00933263 /* Assets.xcassets */; };
 		6F0CD1051EA65B7D00933263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F0CD1031EA65B7D00933263 /* LaunchScreen.storyboard */; };
 		6F0CD1101EA65B7D00933263 /* MyGarageAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CD10F1EA65B7D00933263 /* MyGarageAppTests.swift */; };
+		6FA0D1DC1ED46C2100B62F4C /* Autentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA0D1DB1ED46C2100B62F4C /* Autentication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E054FA71ED4E8CB0010A812 /* error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = error.swift; sourceTree = "<group>"; };
+		4E31EB9B1ED5D85200FF8F8C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4E6510CA1ED6BBD000A41F62 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		4E80A3901ED5CC97002EBD85 /* connectionDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = connectionDB.swift; sourceTree = "<group>"; };
 		6F0CD0F71EA65B7D00933263 /* MyGarageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGarageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0CD0FA1EA65B7D00933263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F0CD0FC1EA65B7D00933263 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +45,7 @@
 		6F0CD10B1EA65B7D00933263 /* MyGarageAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGarageAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0CD10F1EA65B7D00933263 /* MyGarageAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGarageAppTests.swift; sourceTree = "<group>"; };
 		6F0CD1111EA65B7D00933263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA0D1DB1ED46C2100B62F4C /* Autentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Autentication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E31EB9C1ED5D85200FF8F8C /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +67,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E31EB9A1ED5D85100FF8F8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E31EB9B1ED5D85200FF8F8C /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F0CD0EE1EA65B7D00933263 = {
 			isa = PBXGroup;
 			children = (
 				6F0CD0F91EA65B7D00933263 /* MyGarageApp */,
 				6F0CD10E1EA65B7D00933263 /* MyGarageAppTests */,
 				6F0CD0F81EA65B7D00933263 /* Products */,
+				4E31EB9A1ED5D85100FF8F8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +99,14 @@
 			children = (
 				6F0CD0FA1EA65B7D00933263 /* AppDelegate.swift */,
 				6F0CD0FC1EA65B7D00933263 /* ViewController.swift */,
+				4E6510CA1ED6BBD000A41F62 /* Register.swift */,
 				6F0CD0FE1EA65B7D00933263 /* Main.storyboard */,
 				6F0CD1011EA65B7D00933263 /* Assets.xcassets */,
 				6F0CD1031EA65B7D00933263 /* LaunchScreen.storyboard */,
 				6F0CD1061EA65B7D00933263 /* Info.plist */,
+				6FA0D1DB1ED46C2100B62F4C /* Autentication.swift */,
+				4E054FA71ED4E8CB0010A812 /* error.swift */,
+				4E80A3901ED5CC97002EBD85 /* connectionDB.swift */,
 			);
 			path = MyGarageApp;
 			sourceTree = "<group>";
@@ -141,11 +165,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Stefano Pedroli";
 				TargetAttributes = {
 					6F0CD0F61EA65B7D00933263 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5DWCT5WE3D;
 						ProvisioningStyle = Automatic;
 					};
 					6F0CD10A1EA65B7D00933263 = {
@@ -199,7 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E80A3911ED5CC97002EBD85 /* connectionDB.swift in Sources */,
+				4E054FA81ED4E8CB0010A812 /* error.swift in Sources */,
+				4E6510CB1ED6BBD000A41F62 /* Register.swift in Sources */,
 				6F0CD0FD1EA65B7D00933263 /* ViewController.swift in Sources */,
+				6FA0D1DC1ED46C2100B62F4C /* Autentication.swift in Sources */,
 				6F0CD0FB1EA65B7D00933263 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +289,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -282,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -309,6 +339,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -325,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -337,7 +368,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5DWCT5WE3D;
 				INFOPLIST_FILE = MyGarageApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITSPiemontWebMobile.MyGarageApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,7 +382,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5DWCT5WE3D;
 				INFOPLIST_FILE = MyGarageApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITSPiemontWebMobile.MyGarageApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,6 +439,7 @@
 				6F0CD1161EA65B7D00933263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F0CD1171EA65B7D00933263 /* Build configuration list for PBXNativeTarget "MyGarageAppTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +448,7 @@
 				6F0CD1191EA65B7D00933263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
