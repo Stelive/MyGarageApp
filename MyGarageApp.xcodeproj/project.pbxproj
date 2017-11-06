@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E054FA81ED4E8CB0010A812 /* error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E054FA71ED4E8CB0010A812 /* error.swift */; };
-		4E31EB9C1ED5D85200FF8F8C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E31EB9B1ED5D85200FF8F8C /* libsqlite3.tbd */; };
+		4E054FA81ED4E8CB0010A812 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E054FA71ED4E8CB0010A812 /* Error.swift */; };
 		4E6510CB1ED6BBD000A41F62 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6510CA1ED6BBD000A41F62 /* Register.swift */; };
 		4E80A3911ED5CC97002EBD85 /* connectionDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80A3901ED5CC97002EBD85 /* connectionDB.swift */; };
 		6F0CD0FB1EA65B7D00933263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CD0FA1EA65B7D00933263 /* AppDelegate.swift */; };
@@ -17,7 +16,30 @@
 		6F0CD1021EA65B7D00933263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F0CD1011EA65B7D00933263 /* Assets.xcassets */; };
 		6F0CD1051EA65B7D00933263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F0CD1031EA65B7D00933263 /* LaunchScreen.storyboard */; };
 		6F0CD1101EA65B7D00933263 /* MyGarageAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CD10F1EA65B7D00933263 /* MyGarageAppTests.swift */; };
+		6F8AA40C1F0B89FD00E999A0 /* StatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8AA40B1F0B89FD00E999A0 /* StatusManager.swift */; };
 		6FA0D1DC1ED46C2100B62F4C /* Autentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA0D1DB1ED46C2100B62F4C /* Autentication.swift */; };
+		6FE8EF751F02A01D009A5699 /* ListOfCarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8EF741F02A01D009A5699 /* ListOfCarsController.swift */; };
+		6FE8EF791F02B252009A5699 /* AutoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8EF781F02B252009A5699 /* AutoViewCell.swift */; };
+		84258F281F8CE7D8002D1CAC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84258F271F8CE7D8002D1CAC /* Extension.swift */; };
+		84466A741F7965E700D4CCD3 /* AddVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84466A731F7965E700D4CCD3 /* AddVehicle.swift */; };
+		845045BF1F89AA36004602A7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845045BE1F89AA36004602A7 /* MapView.swift */; };
+		8451B3DC1F73257F00783BF5 /* openDataSoftDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451B3DB1F73257F00783BF5 /* openDataSoftDB.swift */; };
+		8468A5B21FAF39460033E4D9 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A5B11FAF39460033E4D9 /* PopUpViewController.swift */; };
+		8468A5BC1FAF6D050033E4D9 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8468A5BA1FAF6D040033E4D9 /* Realm.framework */; };
+		8468A5BD1FAF6D050033E4D9 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8468A5BA1FAF6D040033E4D9 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8468A5BE1FAF6D050033E4D9 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8468A5BB1FAF6D050033E4D9 /* RealmSwift.framework */; };
+		8468A5BF1FAF6D050033E4D9 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8468A5BB1FAF6D050033E4D9 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		847002A51F8A2C9900CCC903 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847002A41F8A2C9900CCC903 /* MapKit.framework */; };
+		847D6B8A1FAF851E0045373E /* RealmTaskAutoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D6B891FAF851E0045373E /* RealmTaskAutoTableVC.swift */; };
+		84A89B0F1F8EDE8000622D30 /* FirstViewOfSideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A89B0E1F8EDE8000622D30 /* FirstViewOfSideMenuController.swift */; };
+		84A89B111F8EDE9800622D30 /* SecondViewOfSideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A89B101F8EDE9800622D30 /* SecondViewOfSideMenuController.swift */; };
+		84A89B131F8EDEAB00622D30 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A89B121F8EDEAB00622D30 /* ENSideMenu.swift */; };
+		84A89B151F8EDEC300622D30 /* ENSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A89B141F8EDEC300622D30 /* ENSideMenuViewController.swift */; };
+		84A89B171F8EDEDF00622D30 /* MyMenuTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A89B161F8EDEDF00622D30 /* MyMenuTableController.swift */; };
+		84A89B191F8EDEF200622D30 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A89B181F8EDEF200622D30 /* MyNavigationController.swift */; };
+		84BB3FDD1F75386300BE712D /* AllVehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB3FDC1F75386300BE712D /* AllVehicles.swift */; };
+		84C0B40D1F8B831700DA019B /* ImageCropperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C0B40C1F8B831700DA019B /* ImageCropperViewController.swift */; };
+		84ECB4F51F957452003495C3 /* Auto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECB4F41F957452003495C3 /* Auto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,9 +52,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8468A5C01FAF6D050033E4D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8468A5BF1FAF6D050033E4D9 /* RealmSwift.framework in Embed Frameworks */,
+				8468A5BD1FAF6D050033E4D9 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		4E054FA71ED4E8CB0010A812 /* error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = error.swift; sourceTree = "<group>"; };
-		4E31EB9B1ED5D85200FF8F8C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4E054FA71ED4E8CB0010A812 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		4E6510CA1ED6BBD000A41F62 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		4E80A3901ED5CC97002EBD85 /* connectionDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = connectionDB.swift; sourceTree = "<group>"; };
 		6F0CD0F71EA65B7D00933263 /* MyGarageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGarageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +81,28 @@
 		6F0CD10B1EA65B7D00933263 /* MyGarageAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGarageAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0CD10F1EA65B7D00933263 /* MyGarageAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGarageAppTests.swift; sourceTree = "<group>"; };
 		6F0CD1111EA65B7D00933263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F8AA40B1F0B89FD00E999A0 /* StatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusManager.swift; sourceTree = "<group>"; };
 		6FA0D1DB1ED46C2100B62F4C /* Autentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Autentication.swift; sourceTree = "<group>"; };
+		6FE8EF741F02A01D009A5699 /* ListOfCarsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfCarsController.swift; sourceTree = "<group>"; };
+		6FE8EF781F02B252009A5699 /* AutoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoViewCell.swift; sourceTree = "<group>"; };
+		84258F271F8CE7D8002D1CAC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		84466A731F7965E700D4CCD3 /* AddVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicle.swift; sourceTree = "<group>"; };
+		845045BE1F89AA36004602A7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8451B3DB1F73257F00783BF5 /* openDataSoftDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openDataSoftDB.swift; sourceTree = "<group>"; };
+		8468A5B11FAF39460033E4D9 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		8468A5BA1FAF6D040033E4D9 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		8468A5BB1FAF6D050033E4D9 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		847002A41F8A2C9900CCC903 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		847D6B891FAF851E0045373E /* RealmTaskAutoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTaskAutoTableVC.swift; sourceTree = "<group>"; };
+		84A89B0E1F8EDE8000622D30 /* FirstViewOfSideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewOfSideMenuController.swift; sourceTree = "<group>"; };
+		84A89B101F8EDE9800622D30 /* SecondViewOfSideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewOfSideMenuController.swift; sourceTree = "<group>"; };
+		84A89B121F8EDEAB00622D30 /* ENSideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		84A89B141F8EDEC300622D30 /* ENSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENSideMenuViewController.swift; sourceTree = "<group>"; };
+		84A89B161F8EDEDF00622D30 /* MyMenuTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMenuTableController.swift; sourceTree = "<group>"; };
+		84A89B181F8EDEF200622D30 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		84BB3FDC1F75386300BE712D /* AllVehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllVehicles.swift; sourceTree = "<group>"; };
+		84C0B40C1F8B831700DA019B /* ImageCropperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropperViewController.swift; sourceTree = "<group>"; };
+		84ECB4F41F957452003495C3 /* Auto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +110,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E31EB9C1ED5D85200FF8F8C /* libsqlite3.tbd in Frameworks */,
+				8468A5BC1FAF6D050033E4D9 /* Realm.framework in Frameworks */,
+				847002A51F8A2C9900CCC903 /* MapKit.framework in Frameworks */,
+				8468A5BE1FAF6D050033E4D9 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +129,7 @@
 		4E31EB9A1ED5D85100FF8F8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E31EB9B1ED5D85200FF8F8C /* libsqlite3.tbd */,
+				847002A41F8A2C9900CCC903 /* MapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -78,6 +137,8 @@
 		6F0CD0EE1EA65B7D00933263 = {
 			isa = PBXGroup;
 			children = (
+				8468A5BA1FAF6D040033E4D9 /* Realm.framework */,
+				8468A5BB1FAF6D050033E4D9 /* RealmSwift.framework */,
 				6F0CD0F91EA65B7D00933263 /* MyGarageApp */,
 				6F0CD10E1EA65B7D00933263 /* MyGarageAppTests */,
 				6F0CD0F81EA65B7D00933263 /* Products */,
@@ -98,15 +159,23 @@
 			isa = PBXGroup;
 			children = (
 				6F0CD0FA1EA65B7D00933263 /* AppDelegate.swift */,
-				6F0CD0FC1EA65B7D00933263 /* ViewController.swift */,
-				4E6510CA1ED6BBD000A41F62 /* Register.swift */,
 				6F0CD0FE1EA65B7D00933263 /* Main.storyboard */,
+				845045C01F89AA46004602A7 /* Login */,
+				845045C11F89AA70004602A7 /* List Of Cars */,
+				847002A61F8A3A3F00CCC903 /* Cars From Json */,
+				84466A731F7965E700D4CCD3 /* AddVehicle.swift */,
+				84C0B40C1F8B831700DA019B /* ImageCropperViewController.swift */,
+				845045BE1F89AA36004602A7 /* MapView.swift */,
+				8468A5AC1FAF295B0033E4D9 /* Side Bar View Class */,
+				84A89B0D1F8EDE5600622D30 /* SideBar */,
+				84ECB4F31F957436003495C3 /* Other Class */,
+				845045C21F89AAC4004602A7 /* Connection Class */,
+				6F8AA40B1F0B89FD00E999A0 /* StatusManager.swift */,
+				4E054FA71ED4E8CB0010A812 /* Error.swift */,
+				84258F271F8CE7D8002D1CAC /* Extension.swift */,
 				6F0CD1011EA65B7D00933263 /* Assets.xcassets */,
 				6F0CD1031EA65B7D00933263 /* LaunchScreen.storyboard */,
 				6F0CD1061EA65B7D00933263 /* Info.plist */,
-				6FA0D1DB1ED46C2100B62F4C /* Autentication.swift */,
-				4E054FA71ED4E8CB0010A812 /* error.swift */,
-				4E80A3901ED5CC97002EBD85 /* connectionDB.swift */,
 			);
 			path = MyGarageApp;
 			sourceTree = "<group>";
@@ -120,6 +189,72 @@
 			path = MyGarageAppTests;
 			sourceTree = "<group>";
 		};
+		845045C01F89AA46004602A7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6F0CD0FC1EA65B7D00933263 /* ViewController.swift */,
+				4E6510CA1ED6BBD000A41F62 /* Register.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		845045C11F89AA70004602A7 /* List Of Cars */ = {
+			isa = PBXGroup;
+			children = (
+				6FE8EF741F02A01D009A5699 /* ListOfCarsController.swift */,
+				6FE8EF781F02B252009A5699 /* AutoViewCell.swift */,
+			);
+			path = "List Of Cars";
+			sourceTree = "<group>";
+		};
+		845045C21F89AAC4004602A7 /* Connection Class */ = {
+			isa = PBXGroup;
+			children = (
+				6FA0D1DB1ED46C2100B62F4C /* Autentication.swift */,
+				4E80A3901ED5CC97002EBD85 /* connectionDB.swift */,
+				8451B3DB1F73257F00783BF5 /* openDataSoftDB.swift */,
+			);
+			path = "Connection Class";
+			sourceTree = "<group>";
+		};
+		8468A5AC1FAF295B0033E4D9 /* Side Bar View Class */ = {
+			isa = PBXGroup;
+			children = (
+				847D6B891FAF851E0045373E /* RealmTaskAutoTableVC.swift */,
+				8468A5B11FAF39460033E4D9 /* PopUpViewController.swift */,
+			);
+			path = "Side Bar View Class";
+			sourceTree = "<group>";
+		};
+		847002A61F8A3A3F00CCC903 /* Cars From Json */ = {
+			isa = PBXGroup;
+			children = (
+				84BB3FDC1F75386300BE712D /* AllVehicles.swift */,
+			);
+			path = "Cars From Json";
+			sourceTree = "<group>";
+		};
+		84A89B0D1F8EDE5600622D30 /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				84A89B0E1F8EDE8000622D30 /* FirstViewOfSideMenuController.swift */,
+				84A89B101F8EDE9800622D30 /* SecondViewOfSideMenuController.swift */,
+				84A89B121F8EDEAB00622D30 /* ENSideMenu.swift */,
+				84A89B141F8EDEC300622D30 /* ENSideMenuViewController.swift */,
+				84A89B161F8EDEDF00622D30 /* MyMenuTableController.swift */,
+				84A89B181F8EDEF200622D30 /* MyNavigationController.swift */,
+			);
+			path = SideBar;
+			sourceTree = "<group>";
+		};
+		84ECB4F31F957436003495C3 /* Other Class */ = {
+			isa = PBXGroup;
+			children = (
+				84ECB4F41F957452003495C3 /* Auto.swift */,
+			);
+			path = "Other Class";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,6 +265,7 @@
 				6F0CD0F31EA65B7D00933263 /* Sources */,
 				6F0CD0F41EA65B7D00933263 /* Frameworks */,
 				6F0CD0F51EA65B7D00933263 /* Resources */,
+				8468A5C01FAF6D050033E4D9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,16 +301,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Stefano Pedroli";
 				TargetAttributes = {
 					6F0CD0F61EA65B7D00933263 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 5DWCT5WE3D;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6F0CD10A1EA65B7D00933263 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6F0CD0F61EA65B7D00933263;
 					};
@@ -225,11 +368,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E80A3911ED5CC97002EBD85 /* connectionDB.swift in Sources */,
-				4E054FA81ED4E8CB0010A812 /* error.swift in Sources */,
+				6F8AA40C1F0B89FD00E999A0 /* StatusManager.swift in Sources */,
+				84ECB4F51F957452003495C3 /* Auto.swift in Sources */,
+				84C0B40D1F8B831700DA019B /* ImageCropperViewController.swift in Sources */,
+				84258F281F8CE7D8002D1CAC /* Extension.swift in Sources */,
+				84A89B0F1F8EDE8000622D30 /* FirstViewOfSideMenuController.swift in Sources */,
+				84A89B171F8EDEDF00622D30 /* MyMenuTableController.swift in Sources */,
+				8468A5B21FAF39460033E4D9 /* PopUpViewController.swift in Sources */,
+				6FE8EF791F02B252009A5699 /* AutoViewCell.swift in Sources */,
+				84A89B131F8EDEAB00622D30 /* ENSideMenu.swift in Sources */,
+				4E054FA81ED4E8CB0010A812 /* Error.swift in Sources */,
+				845045BF1F89AA36004602A7 /* MapView.swift in Sources */,
 				4E6510CB1ED6BBD000A41F62 /* Register.swift in Sources */,
+				84466A741F7965E700D4CCD3 /* AddVehicle.swift in Sources */,
+				8451B3DC1F73257F00783BF5 /* openDataSoftDB.swift in Sources */,
+				6FE8EF751F02A01D009A5699 /* ListOfCarsController.swift in Sources */,
+				84BB3FDD1F75386300BE712D /* AllVehicles.swift in Sources */,
 				6F0CD0FD1EA65B7D00933263 /* ViewController.swift in Sources */,
 				6FA0D1DC1ED46C2100B62F4C /* Autentication.swift in Sources */,
+				84A89B151F8EDEC300622D30 /* ENSideMenuViewController.swift in Sources */,
+				84A89B191F8EDEF200622D30 /* MyNavigationController.swift in Sources */,
+				847D6B8A1FAF851E0045373E /* RealmTaskAutoTableVC.swift in Sources */,
 				6F0CD0FB1EA65B7D00933263 /* AppDelegate.swift in Sources */,
+				84A89B111F8EDE9800622D30 /* SecondViewOfSideMenuController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +441,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -288,7 +451,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -330,7 +497,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -338,7 +507,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -369,12 +542,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5DWCT5WE3D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyGarageApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITSPiemontWebMobile.MyGarageApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -383,12 +561,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5DWCT5WE3D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyGarageApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITSPiemontWebMobile.MyGarageApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -401,7 +584,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITSPiemontWebMobile.MyGarageAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGarageApp.app/MyGarageApp";
 			};
 			name = Debug;
@@ -415,7 +599,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITSPiemontWebMobile.MyGarageAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGarageApp.app/MyGarageApp";
 			};
 			name = Release;
