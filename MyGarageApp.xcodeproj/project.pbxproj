@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E054FA81ED4E8CB0010A812 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E054FA71ED4E8CB0010A812 /* Error.swift */; };
+		4E054FA81ED4E8CB0010A812 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E054FA71ED4E8CB0010A812 /* Errors.swift */; };
 		4E6510CB1ED6BBD000A41F62 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6510CA1ED6BBD000A41F62 /* Register.swift */; };
 		4E80A3911ED5CC97002EBD85 /* connectionDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80A3901ED5CC97002EBD85 /* connectionDB.swift */; };
 		6F0CD0FB1EA65B7D00933263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CD0FA1EA65B7D00933263 /* AppDelegate.swift */; };
@@ -68,7 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4E054FA71ED4E8CB0010A812 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		4E054FA71ED4E8CB0010A812 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		4E6510CA1ED6BBD000A41F62 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		4E80A3901ED5CC97002EBD85 /* connectionDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = connectionDB.swift; sourceTree = "<group>"; };
 		6F0CD0F71EA65B7D00933263 /* MyGarageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGarageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,7 +171,7 @@
 				84ECB4F31F957436003495C3 /* Other Class */,
 				845045C21F89AAC4004602A7 /* Connection Class */,
 				6F8AA40B1F0B89FD00E999A0 /* StatusManager.swift */,
-				4E054FA71ED4E8CB0010A812 /* Error.swift */,
+				4E054FA71ED4E8CB0010A812 /* Errors.swift */,
 				84258F271F8CE7D8002D1CAC /* Extension.swift */,
 				6F0CD1011EA65B7D00933263 /* Assets.xcassets */,
 				6F0CD1031EA65B7D00933263 /* LaunchScreen.storyboard */,
@@ -377,7 +377,7 @@
 				8468A5B21FAF39460033E4D9 /* PopUpViewController.swift in Sources */,
 				6FE8EF791F02B252009A5699 /* AutoViewCell.swift in Sources */,
 				84A89B131F8EDEAB00622D30 /* ENSideMenu.swift in Sources */,
-				4E054FA81ED4E8CB0010A812 /* Error.swift in Sources */,
+				4E054FA81ED4E8CB0010A812 /* Errors.swift in Sources */,
 				845045BF1F89AA36004602A7 /* MapView.swift in Sources */,
 				4E6510CB1ED6BBD000A41F62 /* Register.swift in Sources */,
 				84466A741F7965E700D4CCD3 /* AddVehicle.swift in Sources */,
