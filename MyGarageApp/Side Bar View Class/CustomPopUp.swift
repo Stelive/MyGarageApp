@@ -1,19 +1,23 @@
 //
-//  PopUpViewController.swift
+//  CustomPopUp.swift
 //  MyGarageApp
 //
-//  Created by Stefano Pedroli on 05/11/17.
+//  Created by Stefano Pedroli on 07/11/17.
 //  Copyright © 2017 Stefano Pedroli. All rights reserved.
 //
 
 import UIKit
+
+import UIKit
 import Speech
 
-class PopUpViewController: UIViewController, SFSpeechRecognizerDelegate {
+protocol PopViewProtocol {
+    func getText(text: String)
+}
+
+class CustomPopUp: UIViewController, SFSpeechRecognizerDelegate {
     
-    // MARK: Properties
-    
-    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "it-IT"))!
+    private var speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "it-IT"))!
     
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     
@@ -25,10 +29,7 @@ class PopUpViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     @IBOutlet var recordButton : UIButton!
     
-    // MARK: UIViewController
-    
     override func viewDidLoad() {
-        super.viewDidLoad()
         
         // Disable the record buttons until authorization has been granted.
         recordButton.isEnabled = false
@@ -41,26 +42,22 @@ class PopUpViewController: UIViewController, SFSpeechRecognizerDelegate {
         //Looks for single or multiple taps.
         
         //Dismiss Keyboard
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RegisterPage.dismissKeyboard))
-        view.addGestureRecognizer(tap)
+        /*let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RegisterPage.dismissKeyboard))
+         view.addGestureRecognizer(tap)*/
+        
+        let blurFx = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        let blurFxView = UIVisualEffectView(effect: blurFx)
+        blurFxView.frame = view.bounds
+        blurFxView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        blurFxView.alpha = 1 // radius blur
+        view.insertSubview(blurFxView, at: 0)
+        
     }
     
     //Calls this function when the tap is recognized.
     @objc func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
-    }
-    
-    @IBAction func closePopUp(_ sender: AnyObject) {
-        
-         // TODO: Codice che aggiunge il testo come task in realm
-        if !textView.text.isEmpty && textView.text != "(Go ahead, I'm listening)"  {
-            TaskManager().addTask(task: Task(taskName: textView.text))
-        }
-        
-        self.removeAnimate()
-        
-        //self.view.removeFromSuperview()
     }
     
     func showAnimate()
@@ -131,6 +128,7 @@ class PopUpViewController: UIViewController, SFSpeechRecognizerDelegate {
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         
         let inputNode = audioEngine.inputNode
+        //guard let inputNode = audioEngine.inputNode else { fatalError("Audio engine has no input node") }
         guard let recognitionRequest = recognitionRequest else { fatalError("Unable to created a SFSpeechAudioBufferRecognitionRequest object") }
         
         // Configure request so that results are returned before audio recording is finished
@@ -190,18 +188,32 @@ class PopUpViewController: UIViewController, SFSpeechRecognizerDelegate {
     
     // MARK: Interface Builder actions
     
-    @IBAction func recordButtonTapped() {
+    @IBAction func recordButtonTapped(_ sender: UIButton) {
+        sender.pulsate()
         if audioEngine.isRunning {
             audioEngine.stop()
             recognitionRequest?.endAudio()
             recordButton.isEnabled = false
             recordButton.setTitle("Stopping", for: .disabled)
-  
+            
         } else {
             try! startRecording()
             recordButton.setTitle("Stop recording", for: [])
         }
     }
     
+    @IBAction func closePopUp(_ sender: AnyObject) {
+        
+        // TODO: Codice che aggiunge il testo come task in realm
+        if !textView.text.isEmpty && textView.text != "(Go ahead, I'm listening)"  {
+            TaskManager().addTask(task: Task(taskName: textView.text))
+            print(textView.text)
+        }
+        
+        //self.removeAnimate() --> METODO DI PRIMA
+        self.dismiss(animated: true, completion: nil)
+        
+        //self.view.removeFromSuperview()
+    }
+    
 }
-

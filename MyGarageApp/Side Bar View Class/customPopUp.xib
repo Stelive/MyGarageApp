@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="5LO-mz-7tA" customClass="CustomPopUp" customModule="MyGarageApp" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="Lse-qm-Kw6">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cDE-bA-hs7">
+                        <rect key="frame" x="67" y="207" width="240" height="253"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juR-3T-GFz">
+                                <rect key="frame" x="8" y="215" width="224" height="30"/>
+                                <color key="backgroundColor" red="0.44988665799999999" green="0.0" blue="0.073527171670000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="2PI-AR-8LF"/>
+                                    <constraint firstAttribute="height" constant="30" id="jUz-xQ-8GY"/>
+                                </constraints>
+                                <state key="normal" title="Close PopUp">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closePopUp:" destination="5LO-mz-7tA" eventType="touchUpInside" id="X1b-hb-jQP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS6-Sx-6YF">
+                                <rect key="frame" x="8" y="177" width="224" height="30"/>
+                                <color key="backgroundColor" red="0.44988665799999999" green="0.33000865639999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Bwn-Y6-0oF"/>
+                                    <constraint firstAttribute="width" constant="224" id="Ibd-pi-lek"/>
+                                </constraints>
+                                <state key="normal" title="Start Recording">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordButtonTapped:" destination="5LO-mz-7tA" eventType="touchUpInside" id="1z3-d1-oBq"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cfo-r6-K3X">
+                                <rect key="frame" x="8" y="30" width="224" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="EDc-sT-ovB"/>
+                                    <constraint firstAttribute="height" constant="139" id="rQG-a9-4sk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="yz5-D1-pvz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="139" id="zEb-P5-dDo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWH-vn-t5j">
+                                <rect key="frame" x="202" y="8" width="30" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="IT"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90928594559999998" green="0.0" blue="0.031753061819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="juR-3T-GFz" firstAttribute="top" secondItem="aS6-Sx-6YF" secondAttribute="bottom" constant="8" id="0fr-BN-anl"/>
+                            <constraint firstAttribute="trailing" secondItem="aS6-Sx-6YF" secondAttribute="trailing" constant="8" id="2Ik-Ij-jOH"/>
+                            <constraint firstAttribute="bottom" secondItem="juR-3T-GFz" secondAttribute="bottom" constant="8" id="3eD-o8-Cm8"/>
+                            <constraint firstItem="aS6-Sx-6YF" firstAttribute="leading" secondItem="cDE-bA-hs7" secondAttribute="leading" constant="8" id="4Ga-0k-eQS"/>
+                            <constraint firstAttribute="trailing" secondItem="cfo-r6-K3X" secondAttribute="trailing" constant="8" id="5Z1-aJ-6ey"/>
+                            <constraint firstItem="aS6-Sx-6YF" firstAttribute="top" secondItem="cfo-r6-K3X" secondAttribute="bottom" constant="8" id="7pW-eT-6hH"/>
+                            <constraint firstItem="aS6-Sx-6YF" firstAttribute="trailing" secondItem="cfo-r6-K3X" secondAttribute="trailing" id="BC3-cc-dCI"/>
+                            <constraint firstItem="aS6-Sx-6YF" firstAttribute="leading" secondItem="juR-3T-GFz" secondAttribute="leading" id="CfS-CY-JaV"/>
+                            <constraint firstAttribute="trailing" secondItem="cfo-r6-K3X" secondAttribute="trailing" constant="8" id="Fa0-dk-6Rq"/>
+                            <constraint firstItem="cfo-r6-K3X" firstAttribute="top" secondItem="cDE-bA-hs7" secondAttribute="top" constant="30" id="Kbh-4Z-bgu"/>
+                            <constraint firstItem="aS6-Sx-6YF" firstAttribute="top" secondItem="cfo-r6-K3X" secondAttribute="bottom" constant="8" id="N72-Tp-cOP"/>
+                            <constraint firstItem="juR-3T-GFz" firstAttribute="top" secondItem="aS6-Sx-6YF" secondAttribute="bottom" constant="8" id="NAL-RR-hvn"/>
+                            <constraint firstItem="cfo-r6-K3X" firstAttribute="top" secondItem="cDE-bA-hs7" secondAttribute="top" constant="30" id="NQq-JZ-3BD"/>
+                            <constraint firstItem="aS6-Sx-6YF" firstAttribute="top" secondItem="cfo-r6-K3X" secondAttribute="bottom" constant="8" id="OnC-rQ-hNg"/>
+                            <constraint firstItem="aS6-Sx-6YF" firstAttribute="trailing" secondItem="juR-3T-GFz" secondAttribute="trailing" id="Pei-dR-Aui"/>
+                            <constraint firstAttribute="trailing" secondItem="cfo-r6-K3X" secondAttribute="trailing" constant="8" id="RHD-Wz-YHf"/>
+                            <constraint firstItem="juR-3T-GFz" firstAttribute="leading" secondItem="cDE-bA-hs7" secondAttribute="leading" constant="8" id="Uua-XK-LxF"/>
+                            <constraint firstItem="aS6-Sx-6YF" firstAttribute="top" secondItem="cfo-r6-K3X" secondAttribute="bottom" constant="8" id="esG-sU-fjg"/>
+                            <constraint firstItem="aS6-Sx-6YF" firstAttribute="top" secondItem="cfo-r6-K3X" secondAttribute="bottom" constant="8" id="exB-us-HAd"/>
+                            <constraint firstItem="cfo-r6-K3X" firstAttribute="top" secondItem="cDE-bA-hs7" secondAttribute="top" constant="30" id="hPH-Lg-Xba"/>
+                            <constraint firstItem="cfo-r6-K3X" firstAttribute="leading" secondItem="cDE-bA-hs7" secondAttribute="leading" constant="8" id="o0S-uo-XZF"/>
+                            <constraint firstItem="cfo-r6-K3X" firstAttribute="leading" secondItem="cDE-bA-hs7" secondAttribute="leading" constant="8" id="ooJ-0M-sDz"/>
+                            <constraint firstItem="juR-3T-GFz" firstAttribute="top" secondItem="aS6-Sx-6YF" secondAttribute="bottom" constant="8" symbolic="YES" id="xAe-su-vre"/>
+                            <constraint firstItem="aS6-Sx-6YF" firstAttribute="leading" secondItem="cfo-r6-K3X" secondAttribute="leading" id="yDS-rK-Olf"/>
+                            <constraint firstAttribute="trailing" secondItem="juR-3T-GFz" secondAttribute="trailing" constant="8" id="z7a-gd-TIl"/>
+                            <constraint firstItem="cfo-r6-K3X" firstAttribute="leading" secondItem="cDE-bA-hs7" secondAttribute="leading" constant="8" id="zIr-sa-hHZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="cDE-bA-hs7" firstAttribute="leading" secondItem="jBt-Ur-zmO" secondAttribute="leading" constant="67" id="4CK-vo-Yjw"/>
+                    <constraint firstItem="cDE-bA-hs7" firstAttribute="centerX" secondItem="jBt-Ur-zmO" secondAttribute="centerX" id="4Mx-DC-1QT"/>
+                    <constraint firstItem="cDE-bA-hs7" firstAttribute="centerY" secondItem="jBt-Ur-zmO" secondAttribute="centerY" constant="-10" id="ALo-Ve-h4o"/>
+                    <constraint firstItem="cDE-bA-hs7" firstAttribute="top" secondItem="jBt-Ur-zmO" secondAttribute="top" constant="187" id="UGm-Eu-zJ7"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="jBt-Ur-zmO"/>
+            </view>
+            <connections>
+                <outlet property="recordButton" destination="aS6-Sx-6YF" id="lrw-hY-JBM"/>
+                <outlet property="textView" destination="cfo-r6-K3X" id="xd4-KB-KYE"/>
+            </connections>
+            <point key="canvasLocation" x="-71" y="218"/>
+        </viewController>
+    </objects>
+</document>

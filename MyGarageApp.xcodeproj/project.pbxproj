@@ -21,6 +21,8 @@
 		6FE8EF751F02A01D009A5699 /* ListOfCarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8EF741F02A01D009A5699 /* ListOfCarsController.swift */; };
 		6FE8EF791F02B252009A5699 /* AutoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8EF781F02B252009A5699 /* AutoViewCell.swift */; };
 		84258F281F8CE7D8002D1CAC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84258F271F8CE7D8002D1CAC /* Extension.swift */; };
+		8427D8E21FB24A6F00F296BE /* customPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427D8E11FB24A6F00F296BE /* customPopUp.xib */; };
+		8427D8E41FB24AC100F296BE /* CustomPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427D8E31FB24AC100F296BE /* CustomPopUp.swift */; };
 		844445571FB07B240055851C /* WebKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844445561FB07B240055851C /* WebKitViewController.swift */; };
 		84466A741F7965E700D4CCD3 /* AddVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84466A731F7965E700D4CCD3 /* AddVehicle.swift */; };
 		845045BF1F89AA36004602A7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845045BE1F89AA36004602A7 /* MapView.swift */; };
@@ -89,6 +91,8 @@
 		6FE8EF741F02A01D009A5699 /* ListOfCarsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfCarsController.swift; sourceTree = "<group>"; };
 		6FE8EF781F02B252009A5699 /* AutoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoViewCell.swift; sourceTree = "<group>"; };
 		84258F271F8CE7D8002D1CAC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		8427D8E11FB24A6F00F296BE /* customPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customPopUp.xib; sourceTree = "<group>"; };
+		8427D8E31FB24AC100F296BE /* CustomPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUp.swift; sourceTree = "<group>"; };
 		844445561FB07B240055851C /* WebKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitViewController.swift; sourceTree = "<group>"; };
 		84466A731F7965E700D4CCD3 /* AddVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicle.swift; sourceTree = "<group>"; };
 		845045BE1F89AA36004602A7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 				847D6B891FAF851E0045373E /* RealmTaskAutoTableVC.swift */,
 				8468A5B11FAF39460033E4D9 /* PopUpViewController.swift */,
 				844445561FB07B240055851C /* WebKitViewController.swift */,
+				8427D8E11FB24A6F00F296BE /* customPopUp.xib */,
+				8427D8E31FB24AC100F296BE /* CustomPopUp.swift */,
 			);
 			path = "Side Bar View Class";
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 				6F0CD1051EA65B7D00933263 /* LaunchScreen.storyboard in Resources */,
 				6F0CD1021EA65B7D00933263 /* Assets.xcassets in Resources */,
 				6F0CD1001EA65B7D00933263 /* Main.storyboard in Resources */,
+				8427D8E21FB24A6F00F296BE /* customPopUp.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +390,7 @@
 				84258F281F8CE7D8002D1CAC /* Extension.swift in Sources */,
 				84A89B0F1F8EDE8000622D30 /* FirstViewOfSideMenuController.swift in Sources */,
 				84CE9AEE1FB12BD000E13EFF /* CustomDismissAnimationController.swift in Sources */,
+				8427D8E41FB24AC100F296BE /* CustomPopUp.swift in Sources */,
 				84A89B171F8EDEDF00622D30 /* MyMenuTableController.swift in Sources */,
 				8468A5B21FAF39460033E4D9 /* PopUpViewController.swift in Sources */,
 				844445571FB07B240055851C /* WebKitViewController.swift in Sources */,

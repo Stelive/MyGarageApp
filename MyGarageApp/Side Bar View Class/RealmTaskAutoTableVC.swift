@@ -66,13 +66,8 @@ class RealmTaskAutoTableVC: UITableViewController {
     
     @IBAction func addTask(_ sender: Any) {
         
-        /*let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
-         let blurEffectView = UIVisualEffectView(effect: blurEffect)
-         blurEffectView.frame = view.bounds
-         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-         self.view.addSubview(blurEffectView)*/
-        
-        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
+        //OLD CODE
+        /*let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "sbPopUpID") as! PopUpViewController
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = tableView.frame
         //popOverVC.view.frame = self.view.frame
@@ -80,7 +75,13 @@ class RealmTaskAutoTableVC: UITableViewController {
         //self.view.addSubview(popOverVC.view)
         //addTask.isEnabled = false
         popOverVC.didMove(toParentViewController: self)
-        //tableView.reloadData()
+        //tableView.reloadData()*/
+        
+        let alert = Bundle.main.loadNibNamed("customPopUp", owner: self, options: nil)?.last as! UIViewController
+        alert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        alert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     // TABLE VIEW PART

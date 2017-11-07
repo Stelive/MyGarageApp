@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AllVehicles: UITableViewController, UISearchBarDelegate {
+class AllVehicles: UITableViewController, UISearchBarDelegate, UINavigationControllerDelegate, URLSessionDelegate  {
     
     var pickerData = [String]()
     var modelsData = [[String]]()
@@ -24,6 +24,8 @@ class AllVehicles: UITableViewController, UISearchBarDelegate {
     @IBOutlet var tableViewVehicles: UITableView!
     @IBOutlet var searchBar: UISearchBar!
     
+    let customDismissAnimationController = CustomDismissAnimationController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,11 +37,11 @@ class AllVehicles: UITableViewController, UISearchBarDelegate {
             //}
         }
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        navigationController?.delegate = self
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return customDismissAnimationController
     }
 
     // MARK: - Table view data source
