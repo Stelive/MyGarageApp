@@ -26,10 +26,13 @@ class AddVehicle: UITableViewController, UIImagePickerControllerDelegate, UINavi
     var fromWhatView = ""
     
     var autoFromDB = Auto()
+    var fromEditRowAction: Bool = false
+    
+    let customDismissAnimationController = CustomDismissAnimationController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(fromEditRowAction)
         makeLabel.text = autoFromDB.make
         modelLabel.text = autoFromDB.model
         yearLabel.text = String(autoFromDB.year)
@@ -56,7 +59,12 @@ class AddVehicle: UITableViewController, UIImagePickerControllerDelegate, UINavi
             }
         }
         
+        navigationController?.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return customDismissAnimationController
     }
 
     @IBAction func barButtonItemAction(_ sender: Any) {

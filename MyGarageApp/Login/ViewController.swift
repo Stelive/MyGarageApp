@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var logo: UIImageView!
     
     var userId = ""
-    
+    let customNavigationAnimationController = CustomNavigationAnimationController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +46,11 @@ class ViewController: UIViewController {
         
         view.addGestureRecognizer(tap)
     }
+    
 
     
-    @IBAction func loginAction(_ sender: Any) {
-        
+    @IBAction func loginAction(_ sender: UIButton) {
+        sender.pulsate()
         var usernameEmpty = false
         var passwordEmpty = false
         usernameError.isHidden = true
@@ -118,7 +119,6 @@ class ViewController: UIViewController {
         if let userId = sender as? String {
             statusMngr.codUtente = userId
         }
-        
     }
     
     @IBAction func unwindToLogin(segue: UIStoryboardSegue) {

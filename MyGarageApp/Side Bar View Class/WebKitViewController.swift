@@ -60,12 +60,22 @@ class WebKitViewController: UIViewController, WKUIDelegate {
         print("entrato in copletion Function!")
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override func viewDidLayoutSubviews() {
+        if (!webView.isLoading) {
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+            let nextVC = mainStoryboard.instantiateViewController(withIdentifier: "myNavigationController") as? MyNavigationController
+            present(nextVC!, animated: true, completion: nil)
+        }
+    }
+
+    
+    /*override func viewDidDisappear(_ animated: Bool) {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
-        mainStoryboard.instantiateViewController(withIdentifier: "listOfCars")
+        let nextVC = mainStoryboard.instantiateViewController(withIdentifier: "listOfCars") as? ListOfCarsController
+        present(nextVC!, animated: true, completion: nil)
     }
     // MARK: - Navigation
-    /*
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.

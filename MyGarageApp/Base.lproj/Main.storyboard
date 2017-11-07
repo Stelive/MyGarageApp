@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -99,7 +100,10 @@
                                             <color key="titleColor" red="0.61394602060000003" green="0.43705409769999998" blue="0.14165644350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <segue destination="nm1-Ho-pKF" kind="show" id="tro-xf-98F"/>
+                                            <segue destination="nm1-Ho-pKF" kind="show" id="tro-xf-98F">
+                                                <segue key="commit" inheritsFrom="parent" id="eQH-UE-ESu"/>
+                                                <segue key="preview" inheritsFrom="commit" id="aPe-NV-FEp"/>
+                                            </segue>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -405,7 +409,7 @@ Lo staff.</string>
         <!--My Garage-->
         <scene sceneID="av8-bI-Bx4">
             <objects>
-                <navigationController title="My Garage" automaticallyAdjustsScrollViewInsets="NO" id="0IZ-hL-i8r" customClass="MyNavigationController" customModule="MyGarageApp" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="myNavigationController" title="My Garage" automaticallyAdjustsScrollViewInsets="NO" id="0IZ-hL-i8r" customClass="MyNavigationController" customModule="MyGarageApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="8Ge-Ol-qhx">
@@ -1162,6 +1166,7 @@ Lo staff.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ne1-5A-pWZ"/>
+        <segue reference="8en-wI-a8M"/>
+        <segue reference="tro-xf-98F"/>
     </inferredMetricsTieBreakers>
 </document>

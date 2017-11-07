@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListOfCarsController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ListOfCarsController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
     
     var refreshControl: UIRefreshControl!
     var userName = ""
@@ -20,6 +20,7 @@ class ListOfCarsController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var myActivity: UIActivityIndicatorView!
     
     var cellData = [[String:String]]()
+    let customNavigationAnimationController = CustomNavigationAnimationController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,10 @@ class ListOfCarsController: UIViewController, UITableViewDataSource, UITableView
         tableView.addSubview(refreshControl)
         // Configure Refresh Control
 
-
+        // Add Footer
+        let footerView = UIView()
+        footerView.backgroundColor = UIColor.clear
+        tableView.tableFooterView = footerView
         
         userName = StatusManager.sharedInstance.username
         password = StatusManager.sharedInstance.password
@@ -39,9 +43,11 @@ class ListOfCarsController: UIViewController, UITableViewDataSource, UITableView
         loadSampleMeals() {
             DispatchQueue.main.sync {
                 self.tableView.reloadData()
+                self.animateTable()
             }
         }
-       
+        //for animation of nexVC
+       navigationController?.delegate = self
     }
     
     func doSomething() {
@@ -85,17 +91,35 @@ class ListOfCarsController: UIViewController, UITableViewDataSource, UITableView
 
     }
     
-    override func viewWillAppear(_ animated: Bool) { // METODO DEL CAZZO
-        /*tableView.indexPathsForSelectedRows?.forEach{
-            tableView.deselectRow(at: $0, animated: true )
-        }*/
-        //cellData.removeAll()
-        //tableView.reloadData()
-        /*loadSampleMeals() {
-            DispatchQueue.main.sync {
-                self.tableView.reloadData()
-            }
-        }*/
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.delegate = self
+    }
+    
+    func animateTable() {
+        tableView.reloadData()
+        
+        let cells = tableView.visibleCells
+        let tableHeight: CGFloat = tableView.bounds.size.height
+        
+        for i in cells {
+            let cell: UITableViewCell = i as UITableViewCell
+            cell.transform = CGAffineTransform(translationX: 0, y: tableHeight)
+        }
+        
+        var index = 0
+        
+        for a in cells {
+            let cell: UITableViewCell = a as UITableViewCell
+            UIView.animate(withDuration: 1.5,
+                           delay: 0.05 * Double(index),
+                           usingSpringWithDamping: 0.8,
+                initialSpringVelocity: 0,
+                options: UIViewAnimationOptions(rawValue: 0),
+                animations: {
+                    cell.transform = CGAffineTransform(translationX: 0, y: 0);
+            }, completion: nil)
+            index += 1
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -176,24 +200,40 @@ class ListOfCarsController: UIViewController, UITableViewDataSource, UITableView
         
         deleteRowAction.backgroundColor = UIColor.orange
         let editRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: " Edit ", handler:{action, indexpath in
-            self.performSegue(withIdentifier: "ShowDetail", sender: nil)
+            self.performSegue(withIdentifier: "ShowDetail", sender: indexPath)
         })
         
         return [deleteRowAction, editRowAction]
     }
     
-    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        customNavigationAnimationController.reverse = operation == .pop
+        return customNavigationAnimationController
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "ShowDetail" {
                 if let nextViewController = segue.destination as? AddVehicle {
-                    let indexPath = self.tableView.indexPathForSelectedRow
+                    
+                    var indexPath = IndexPath()
+                    
+                    var fromEditAction: Bool = false
+                    if ((sender as? IndexPath) != nil) { // controlla se gli sto mandando solo l'indexPath nel sender o altro.
+                        indexPath = sender as! IndexPath
+                        fromEditAction = true
+                    } else { // qua appunto no quindi me lo devo recuperare io
+                        indexPath = self.tableView.indexPathForSelectedRow!
+                    }
 
                     // Creo un oggetto di tipo Auto() e lo passo alla schermata successiva
-                    let auto = Auto(codAuto: Int(cellData[(indexPath?.row)!]["codAuto"]!)!, make: cellData[(indexPath?.row)!]["nomeAuto"]!, model: cellData[(indexPath?.row)!]["modelloAuto"]!, year: Int(cellData[(indexPath?.row)!]["annoAuto"]!)!, imgURL: "http://mygarage.altervista.org/img/\(cellData[(indexPath?.row)!]["imgAuto"] ?? "default.jpg")", targaFromDB: cellData[(indexPath?.row)!]["targaAuto"]!, cilindrataFromDB: Int(cellData[(indexPath?.row)!]["cilindrataAuto"]!)!,revisioneFromDB: cellData[(indexPath?.row)!]["immatricolazioneAuto"]!, latitudine: Float(cellData[(indexPath?.row)!]["latitude"]!)!, longitudine: Float(cellData[(indexPath?.row)!]["longitude"]!)!)
+                    let auto = Auto(codAuto: Int(cellData[(indexPath.row)]["codAuto"]!)!, make: cellData[(indexPath.row)]["nomeAuto"]!, model: cellData[(indexPath.row)]["modelloAuto"]!, year: Int(cellData[(indexPath.row)]["annoAuto"]!)!, imgURL: "http://mygarage.altervista.org/img/\(cellData[(indexPath.row)]["imgAuto"] ?? "default.jpg")", targaFromDB: cellData[(indexPath.row)]["targaAuto"]!, cilindrataFromDB: Int(cellData[(indexPath.row)]["cilindrataAuto"]!)!,revisioneFromDB: cellData[(indexPath.row)]["immatricolazioneAuto"]!, latitudine: Float(cellData[(indexPath.row)]["latitude"]!)!, longitudine: Float(cellData[(indexPath.row)]["longitude"]!)!)
                     nextViewController.autoFromDB = auto
-
+                    nextViewController.fromEditRowAction = fromEditAction
+                    
+                    tableView.deselectRow(at: indexPath, animated: true)
+                    //let toViewController = segue.destination as? AddVehicle
+                    //toViewController?.transitioningDelegate = self
                 }
         }
     }
