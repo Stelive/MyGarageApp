@@ -59,6 +59,14 @@ class AddVehicle: UITableViewController, UIImagePickerControllerDelegate, UINavi
             }
         }
         
+        if fromEditRowAction {
+            let alert = Bundle.main.loadNibNamed("customWalkThrought", owner: self, options: nil)?.last as! UIViewController
+            alert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+            alert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+        
         navigationController?.delegate = self
         // Do any additional setup after loading the view.
     }

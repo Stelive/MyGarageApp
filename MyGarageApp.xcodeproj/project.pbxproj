@@ -20,6 +20,8 @@
 		6FA0D1DC1ED46C2100B62F4C /* Autentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA0D1DB1ED46C2100B62F4C /* Autentication.swift */; };
 		6FE8EF751F02A01D009A5699 /* ListOfCarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8EF741F02A01D009A5699 /* ListOfCarsController.swift */; };
 		6FE8EF791F02B252009A5699 /* AutoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8EF781F02B252009A5699 /* AutoViewCell.swift */; };
+		8412DD091FB376BB005EE3D4 /* CustomWalkThrought.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412DD071FB376BB005EE3D4 /* CustomWalkThrought.swift */; };
+		8412DD0A1FB376BB005EE3D4 /* customWalkThrought.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8412DD081FB376BB005EE3D4 /* customWalkThrought.xib */; };
 		84258F281F8CE7D8002D1CAC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84258F271F8CE7D8002D1CAC /* Extension.swift */; };
 		8427D8E21FB24A6F00F296BE /* customPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427D8E11FB24A6F00F296BE /* customPopUp.xib */; };
 		8427D8E41FB24AC100F296BE /* CustomPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427D8E31FB24AC100F296BE /* CustomPopUp.swift */; };
@@ -90,6 +92,8 @@
 		6FA0D1DB1ED46C2100B62F4C /* Autentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Autentication.swift; sourceTree = "<group>"; };
 		6FE8EF741F02A01D009A5699 /* ListOfCarsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfCarsController.swift; sourceTree = "<group>"; };
 		6FE8EF781F02B252009A5699 /* AutoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoViewCell.swift; sourceTree = "<group>"; };
+		8412DD071FB376BB005EE3D4 /* CustomWalkThrought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWalkThrought.swift; sourceTree = "<group>"; };
+		8412DD081FB376BB005EE3D4 /* customWalkThrought.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customWalkThrought.xib; sourceTree = "<group>"; };
 		84258F271F8CE7D8002D1CAC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		8427D8E11FB24A6F00F296BE /* customPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customPopUp.xib; sourceTree = "<group>"; };
 		8427D8E31FB24AC100F296BE /* CustomPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUp.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				845045C11F89AA70004602A7 /* List Of Cars */,
 				847002A61F8A3A3F00CCC903 /* Cars From Json */,
 				84466A731F7965E700D4CCD3 /* AddVehicle.swift */,
+				8412DD081FB376BB005EE3D4 /* customWalkThrought.xib */,
+				8412DD071FB376BB005EE3D4 /* CustomWalkThrought.swift */,
 				84C0B40C1F8B831700DA019B /* ImageCropperViewController.swift */,
 				845045BE1F89AA36004602A7 /* MapView.swift */,
 				8468A5AC1FAF295B0033E4D9 /* Side Bar View Class */,
@@ -366,6 +372,7 @@
 				6F0CD1021EA65B7D00933263 /* Assets.xcassets in Resources */,
 				6F0CD1001EA65B7D00933263 /* Main.storyboard in Resources */,
 				8427D8E21FB24A6F00F296BE /* customPopUp.xib in Resources */,
+				8412DD0A1FB376BB005EE3D4 /* customWalkThrought.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8412DD091FB376BB005EE3D4 /* CustomWalkThrought.swift in Sources */,
 				4E80A3911ED5CC97002EBD85 /* connectionDB.swift in Sources */,
 				6F8AA40C1F0B89FD00E999A0 /* StatusManager.swift in Sources */,
 				84ECB4F51F957452003495C3 /* Auto.swift in Sources */,

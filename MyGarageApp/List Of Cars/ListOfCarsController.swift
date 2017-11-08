@@ -198,10 +198,11 @@ class ListOfCarsController: UIViewController, UITableViewDataSource, UITableView
             tableView.reloadData()
         })
         
-        deleteRowAction.backgroundColor = UIColor.orange
+        deleteRowAction.backgroundColor = UIColor.red
         let editRowAction = UITableViewRowAction(style: UITableViewRowActionStyle.default, title: " Edit ", handler:{action, indexpath in
             self.performSegue(withIdentifier: "ShowDetail", sender: indexPath)
         })
+        editRowAction.backgroundColor = UIColor.orange
         
         return [deleteRowAction, editRowAction]
     }

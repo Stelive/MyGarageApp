@@ -10,7 +10,7 @@ import UIKit
 
 class MyMenuTableViewController: UITableViewController {
     var selectedMenuItem : Int = 0
-    let sezioni = ["List of Cars", "Memo Car", "Search img", "boh"]
+    let sezioni = ["List of Cars", "Memo Car", "Search img", "Cars Game!"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -101,7 +101,7 @@ class MyMenuTableViewController: UITableViewController {
             destViewController = mainStoryboard.instantiateViewController(withIdentifier: "cercaImmagine")
             break
         default:
-            destViewController = mainStoryboard.instantiateViewController(withIdentifier: "segreta4")
+            destViewController = mainStoryboard.instantiateViewController(withIdentifier: "carsGame")
             break
         }
         sideMenuController()?.setContentViewController(destViewController)
