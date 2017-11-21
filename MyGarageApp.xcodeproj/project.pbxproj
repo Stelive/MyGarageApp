@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4BEA4D1FB9DD9300EC7083 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4BEA4B1FB9DD9100EC7083 /* RealmSwift.framework */; };
+		0E4BEA4E1FB9DD9300EC7083 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4BEA4B1FB9DD9100EC7083 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E4BEA4F1FB9DD9300EC7083 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4BEA4C1FB9DD9300EC7083 /* Realm.framework */; };
+		0E4BEA501FB9DD9300EC7083 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4BEA4C1FB9DD9300EC7083 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E74F3381FC3154A00AB58A3 /* MyGarageAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E74F3371FC3154A00AB58A3 /* MyGarageAppUITests.swift */; };
+		0E74F3451FC328D300AB58A3 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E74F3441FC328D300AB58A3 /* UserNotifications.framework */; };
+		0E74F3471FC328D300AB58A3 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E74F3461FC328D300AB58A3 /* UserNotificationsUI.framework */; };
 		4E054FA81ED4E8CB0010A812 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E054FA71ED4E8CB0010A812 /* Errors.swift */; };
 		4E6510CB1ED6BBD000A41F62 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6510CA1ED6BBD000A41F62 /* Register.swift */; };
 		4E80A3911ED5CC97002EBD85 /* connectionDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E80A3901ED5CC97002EBD85 /* connectionDB.swift */; };
@@ -30,10 +37,6 @@
 		845045BF1F89AA36004602A7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845045BE1F89AA36004602A7 /* MapView.swift */; };
 		8451B3DC1F73257F00783BF5 /* openDataSoftDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451B3DB1F73257F00783BF5 /* openDataSoftDB.swift */; };
 		8468A5B21FAF39460033E4D9 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A5B11FAF39460033E4D9 /* PopUpViewController.swift */; };
-		8468A5BC1FAF6D050033E4D9 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8468A5BA1FAF6D040033E4D9 /* Realm.framework */; };
-		8468A5BD1FAF6D050033E4D9 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8468A5BA1FAF6D040033E4D9 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8468A5BE1FAF6D050033E4D9 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8468A5BB1FAF6D050033E4D9 /* RealmSwift.framework */; };
-		8468A5BF1FAF6D050033E4D9 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8468A5BB1FAF6D050033E4D9 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		847002A51F8A2C9900CCC903 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847002A41F8A2C9900CCC903 /* MapKit.framework */; };
 		847D6B8A1FAF851E0045373E /* RealmTaskAutoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D6B891FAF851E0045373E /* RealmTaskAutoTableVC.swift */; };
 		84A89B0F1F8EDE8000622D30 /* FirstViewOfSideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A89B0E1F8EDE8000622D30 /* FirstViewOfSideMenuController.swift */; };
@@ -50,6 +53,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0E74F33A1FC3154A00AB58A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F0CD0EF1EA65B7D00933263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F0CD0F61EA65B7D00933263;
+			remoteInfo = MyGarageApp;
+		};
 		6F0CD10C1EA65B7D00933263 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6F0CD0EF1EA65B7D00933263 /* Project object */;
@@ -60,14 +70,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8468A5C01FAF6D050033E4D9 /* Embed Frameworks */ = {
+		0E4BEA511FB9DD9300EC7083 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8468A5BF1FAF6D050033E4D9 /* RealmSwift.framework in Embed Frameworks */,
-				8468A5BD1FAF6D050033E4D9 /* Realm.framework in Embed Frameworks */,
+				0E4BEA501FB9DD9300EC7083 /* Realm.framework in Embed Frameworks */,
+				0E4BEA4E1FB9DD9300EC7083 /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +85,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E4BEA4B1FB9DD9100EC7083 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		0E4BEA4C1FB9DD9300EC7083 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		0E74F3351FC3154A00AB58A3 /* MyGarageAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGarageAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E74F3371FC3154A00AB58A3 /* MyGarageAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGarageAppUITests.swift; sourceTree = "<group>"; };
+		0E74F3391FC3154A00AB58A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E74F3431FC328D300AB58A3 /* NotificationManager.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationManager.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E74F3441FC328D300AB58A3 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		0E74F3461FC328D300AB58A3 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		0E74F35A1FC329CA00AB58A3 /* SharedExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SharedExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E054FA71ED4E8CB0010A812 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		4E6510CA1ED6BBD000A41F62 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		4E80A3901ED5CC97002EBD85 /* connectionDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = connectionDB.swift; sourceTree = "<group>"; };
@@ -102,8 +121,6 @@
 		845045BE1F89AA36004602A7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8451B3DB1F73257F00783BF5 /* openDataSoftDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openDataSoftDB.swift; sourceTree = "<group>"; };
 		8468A5B11FAF39460033E4D9 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		8468A5BA1FAF6D040033E4D9 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		8468A5BB1FAF6D050033E4D9 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		847002A41F8A2C9900CCC903 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		847D6B891FAF851E0045373E /* RealmTaskAutoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTaskAutoTableVC.swift; sourceTree = "<group>"; };
 		84A89B0E1F8EDE8000622D30 /* FirstViewOfSideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewOfSideMenuController.swift; sourceTree = "<group>"; };
@@ -120,13 +137,36 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E74F3321FC3154A00AB58A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E74F3401FC328D300AB58A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E74F3471FC328D300AB58A3 /* UserNotificationsUI.framework in Frameworks */,
+				0E74F3451FC328D300AB58A3 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E74F3571FC329CA00AB58A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F0CD0F41EA65B7D00933263 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8468A5BC1FAF6D050033E4D9 /* Realm.framework in Frameworks */,
+				0E4BEA4F1FB9DD9300EC7083 /* Realm.framework in Frameworks */,
+				0E4BEA4D1FB9DD9300EC7083 /* RealmSwift.framework in Frameworks */,
 				847002A51F8A2C9900CCC903 /* MapKit.framework in Frameworks */,
-				8468A5BE1FAF6D050033E4D9 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,10 +180,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E74F3361FC3154A00AB58A3 /* MyGarageAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0E74F3371FC3154A00AB58A3 /* MyGarageAppUITests.swift */,
+				0E74F3391FC3154A00AB58A3 /* Info.plist */,
+			);
+			path = MyGarageAppUITests;
+			sourceTree = "<group>";
+		};
 		4E31EB9A1ED5D85100FF8F8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				847002A41F8A2C9900CCC903 /* MapKit.framework */,
+				0E74F3441FC328D300AB58A3 /* UserNotifications.framework */,
+				0E74F3461FC328D300AB58A3 /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,10 +202,11 @@
 		6F0CD0EE1EA65B7D00933263 = {
 			isa = PBXGroup;
 			children = (
-				8468A5BA1FAF6D040033E4D9 /* Realm.framework */,
-				8468A5BB1FAF6D050033E4D9 /* RealmSwift.framework */,
+				0E4BEA4C1FB9DD9300EC7083 /* Realm.framework */,
+				0E4BEA4B1FB9DD9100EC7083 /* RealmSwift.framework */,
 				6F0CD0F91EA65B7D00933263 /* MyGarageApp */,
 				6F0CD10E1EA65B7D00933263 /* MyGarageAppTests */,
+				0E74F3361FC3154A00AB58A3 /* MyGarageAppUITests */,
 				6F0CD0F81EA65B7D00933263 /* Products */,
 				4E31EB9A1ED5D85100FF8F8C /* Frameworks */,
 			);
@@ -165,6 +217,9 @@
 			children = (
 				6F0CD0F71EA65B7D00933263 /* MyGarageApp.app */,
 				6F0CD10B1EA65B7D00933263 /* MyGarageAppTests.xctest */,
+				0E74F3351FC3154A00AB58A3 /* MyGarageAppUITests.xctest */,
+				0E74F3431FC328D300AB58A3 /* NotificationManager.appex */,
+				0E74F35A1FC329CA00AB58A3 /* SharedExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,6 +334,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0E74F3341FC3154A00AB58A3 /* MyGarageAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E74F33E1FC3154A00AB58A3 /* Build configuration list for PBXNativeTarget "MyGarageAppUITests" */;
+			buildPhases = (
+				0E74F3311FC3154A00AB58A3 /* Sources */,
+				0E74F3321FC3154A00AB58A3 /* Frameworks */,
+				0E74F3331FC3154A00AB58A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E74F33B1FC3154A00AB58A3 /* PBXTargetDependency */,
+			);
+			name = MyGarageAppUITests;
+			productName = MyGarageAppUITests;
+			productReference = 0E74F3351FC3154A00AB58A3 /* MyGarageAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0E74F3421FC328D300AB58A3 /* NotificationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E74F3541FC328D300AB58A3 /* Build configuration list for PBXNativeTarget "NotificationManager" */;
+			buildPhases = (
+				0E74F33F1FC328D300AB58A3 /* Sources */,
+				0E74F3401FC328D300AB58A3 /* Frameworks */,
+				0E74F3411FC328D300AB58A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationManager;
+			productName = NotificationManager;
+			productReference = 0E74F3431FC328D300AB58A3 /* NotificationManager.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0E74F3591FC329CA00AB58A3 /* SharedExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E74F3651FC329CA00AB58A3 /* Build configuration list for PBXNativeTarget "SharedExtension" */;
+			buildPhases = (
+				0E74F3561FC329CA00AB58A3 /* Sources */,
+				0E74F3571FC329CA00AB58A3 /* Frameworks */,
+				0E74F3581FC329CA00AB58A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedExtension;
+			productName = SharedExtension;
+			productReference = 0E74F35A1FC329CA00AB58A3 /* SharedExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		6F0CD0F61EA65B7D00933263 /* MyGarageApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F0CD1141EA65B7D00933263 /* Build configuration list for PBXNativeTarget "MyGarageApp" */;
@@ -286,7 +393,7 @@
 				6F0CD0F31EA65B7D00933263 /* Sources */,
 				6F0CD0F41EA65B7D00933263 /* Frameworks */,
 				6F0CD0F51EA65B7D00933263 /* Resources */,
-				8468A5C01FAF6D050033E4D9 /* Embed Frameworks */,
+				0E4BEA511FB9DD9300EC7083 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,10 +428,26 @@
 		6F0CD0EF1EA65B7D00933263 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Stefano Pedroli";
 				TargetAttributes = {
+					0E74F3341FC3154A00AB58A3 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = 5DWCT5WE3D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6F0CD0F61EA65B7D00933263;
+					};
+					0E74F3421FC328D300AB58A3 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = 5DWCT5WE3D;
+						ProvisioningStyle = Automatic;
+					};
+					0E74F3591FC329CA00AB58A3 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = 5DWCT5WE3D;
+						ProvisioningStyle = Automatic;
+					};
 					6F0CD0F61EA65B7D00933263 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 5DWCT5WE3D;
@@ -359,11 +482,35 @@
 			targets = (
 				6F0CD0F61EA65B7D00933263 /* MyGarageApp */,
 				6F0CD10A1EA65B7D00933263 /* MyGarageAppTests */,
+				0E74F3341FC3154A00AB58A3 /* MyGarageAppUITests */,
+				0E74F3421FC328D300AB58A3 /* NotificationManager */,
+				0E74F3591FC329CA00AB58A3 /* SharedExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0E74F3331FC3154A00AB58A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E74F3411FC328D300AB58A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E74F3581FC329CA00AB58A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F0CD0F51EA65B7D00933263 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,6 +533,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0E74F3311FC3154A00AB58A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E74F3381FC3154A00AB58A3 /* MyGarageAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E74F33F1FC328D300AB58A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E74F3561FC329CA00AB58A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F0CD0F31EA65B7D00933263 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,6 +602,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0E74F33B1FC3154A00AB58A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F0CD0F61EA65B7D00933263 /* MyGarageApp */;
+			targetProxy = 0E74F33A1FC3154A00AB58A3 /* PBXContainerItemProxy */;
+		};
 		6F0CD10D1EA65B7D00933263 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6F0CD0F61EA65B7D00933263 /* MyGarageApp */;
@@ -460,6 +634,132 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0E74F33C1FC3154A00AB58A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DWCT5WE3D;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyGarageAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stefanoPedroliCompany.MyGarageAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyGarageApp;
+			};
+			name = Debug;
+		};
+		0E74F33D1FC3154A00AB58A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DWCT5WE3D;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = MyGarageAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stefanoPedroliCompany.MyGarageAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyGarageApp;
+			};
+			name = Release;
+		};
+		0E74F3521FC328D300AB58A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DWCT5WE3D;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITSPiemontWebMobile.MyGarageApp.NotificationManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E74F3531FC328D300AB58A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DWCT5WE3D;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITSPiemontWebMobile.MyGarageApp.NotificationManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0E74F3661FC329CA00AB58A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DWCT5WE3D;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SharedExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITSPiemontWebMobile.MyGarageApp.SharedExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E74F3671FC329CA00AB58A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DWCT5WE3D;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SharedExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ITSPiemontWebMobile.MyGarageApp.SharedExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6F0CD1121EA65B7D00933263 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -569,6 +869,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5DWCT5WE3D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,6 +889,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5DWCT5WE3D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -636,6 +938,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E74F33E1FC3154A00AB58A3 /* Build configuration list for PBXNativeTarget "MyGarageAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E74F33C1FC3154A00AB58A3 /* Debug */,
+				0E74F33D1FC3154A00AB58A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E74F3541FC328D300AB58A3 /* Build configuration list for PBXNativeTarget "NotificationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E74F3521FC328D300AB58A3 /* Debug */,
+				0E74F3531FC328D300AB58A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E74F3651FC329CA00AB58A3 /* Build configuration list for PBXNativeTarget "SharedExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E74F3661FC329CA00AB58A3 /* Debug */,
+				0E74F3671FC329CA00AB58A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6F0CD0F21EA65B7D00933263 /* Build configuration list for PBXProject "MyGarageApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

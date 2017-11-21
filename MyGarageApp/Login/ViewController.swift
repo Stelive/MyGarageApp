@@ -35,8 +35,8 @@ class ViewController: UIViewController {
         lblUsername.text = "Stelive"
         lblPassword.text = "Admin"
         
-        loginButton.layer.borderWidth = 0.8
-        loginButton.layer.borderColor = UIColor.blue.cgColor
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.white.cgColor
         
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RegisterPage.dismissKeyboard))

@@ -56,6 +56,10 @@ class RegisterPage: UIViewController, UIPopoverPresentationControllerDelegate {
         confirmPasswordError.isHidden = true
         confirmError.isHidden = true
         
+        // Register login button
+        btnRegister.layer.borderWidth = 1
+        btnRegister.layer.borderColor = UIColor.white.cgColor
+        
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RegisterPage.dismissKeyboard))
         

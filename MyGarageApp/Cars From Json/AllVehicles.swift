@@ -111,6 +111,7 @@ class AllVehicles: UITableViewController, UISearchBarDelegate, UINavigationContr
                         //let make = Make(make: dict.value(forKey: "make") as! String)
                         let modelOfVehicle = Model(model: ((dict.value(forKey: "model") as! String).lowercased()).capitalizingFirstLetter(), year: dict.value(forKey: "year") as! Int)
  
+                        // questo algoritmo è così complicato perchè il JSON è fatto male...
                         if currentMake == "" {
                             currentMake = thisMake
                             //pickerData.append("\(make)(\(year))")

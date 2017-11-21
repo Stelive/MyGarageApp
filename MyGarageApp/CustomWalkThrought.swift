@@ -11,6 +11,8 @@ import CoreGraphics
 
 class CustomWalkThrought: UIViewController {
 
+    var navController: UINavigationController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -64,6 +66,7 @@ class CustomWalkThrought: UIViewController {
         let imageName = "arrow.png"
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image!)
+        
         imageView.frame = CGRect(x: frame.width - 160, y: 75, width: 100, height: 200)
         overlayView.addSubview(imageView)
         

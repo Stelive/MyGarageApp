@@ -7,7 +7,7 @@
 //
 
 import XCTest
-//@testable import MyGarageApp
+@testable import MyGarageApp
 
 class MyGarageAppTests: XCTestCase {
     
@@ -23,20 +23,19 @@ class MyGarageAppTests: XCTestCase {
     
     func testLogin() {
         
-      /*  let expect = expectation(description: "...")
+        let expect = expectation(description: "...")
         
-        let a = AutenticationService(user: "Stelive", password: "Admin")
-        a.checkUser() { result in
+        let checker = AutenticationService(user: "Stelive", password: "Admin")
+        checker.checkUser() { result,id in
             XCTAssert(result == true)
             XCTAssertTrue(result, "result deve essere true")
             
- 
             expect.fulfill()
         }
         
         waitForExpectations(timeout: 5) { error in
             // ...
-        } */
+        }
         
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

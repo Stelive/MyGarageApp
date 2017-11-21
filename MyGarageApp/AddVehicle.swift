@@ -60,7 +60,9 @@ class AddVehicle: UITableViewController, UIImagePickerControllerDelegate, UINavi
         }
         
         if fromEditRowAction {
-            let alert = Bundle.main.loadNibNamed("customWalkThrought", owner: self, options: nil)?.last as! UIViewController
+            let alert = Bundle.main.loadNibNamed("customWalkThrought", owner: self, options: nil)?.last as! CustomWalkThrought
+            alert.navController = self.navigationController
+            
             alert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             alert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             

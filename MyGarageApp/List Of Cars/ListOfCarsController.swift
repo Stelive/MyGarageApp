@@ -32,7 +32,7 @@ class ListOfCarsController: UIViewController, UITableViewDataSource, UITableView
 
         // Add Footer
         let footerView = UIView()
-        footerView.backgroundColor = UIColor.clear
+        footerView.backgroundColor = UIColor(hex: "#FFCA28")
         tableView.tableFooterView = footerView
         
         userName = StatusManager.sharedInstance.username
