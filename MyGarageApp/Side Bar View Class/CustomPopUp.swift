@@ -42,14 +42,17 @@ class CustomPopUp: UIViewController, SFSpeechRecognizerDelegate {
         //Looks for single or multiple taps.
         
         //Dismiss Keyboard
-        /*let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RegisterPage.dismissKeyboard))
-         view.addGestureRecognizer(tap)*/
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
         
         let blurFx = UIBlurEffect(style: UIBlurEffectStyle.dark)
         let blurFxView = UIVisualEffectView(effect: blurFx)
         blurFxView.frame = view.bounds
         blurFxView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         blurFxView.alpha = 1 // radius blur
+        blurFxView.addGestureRecognizer(tap)
         view.insertSubview(blurFxView, at: 0)
         
     }

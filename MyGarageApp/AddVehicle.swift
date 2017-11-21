@@ -234,6 +234,8 @@ class AddVehicle: UITableViewController, UIImagePickerControllerDelegate, UINavi
             if let nextViewController = segue.destination as? MapView{
                 nextViewController.latitude = autoFromDB.latitude
                 nextViewController.longitude = autoFromDB.longitude
+                nextViewController.make = autoFromDB.make
+                nextViewController.model = autoFromDB.model
             }
         }
     }

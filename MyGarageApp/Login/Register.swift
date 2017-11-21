@@ -19,17 +19,6 @@ enum LoginFormErrorType {
     case passwordEmptyField
 }
 
-/*
-    //register page error
-    12 : "username field empty",
-    13 : "password field empty",
-    14 : "confirm password field empty",
-    15 : "password didn't pay",
-    16 : "you don't accept term and condition!",
-    17 : "username already exist"*/
-
-
-
 class RegisterPage: UIViewController, UIPopoverPresentationControllerDelegate {
     
     @IBOutlet weak var logo: UIImageView!

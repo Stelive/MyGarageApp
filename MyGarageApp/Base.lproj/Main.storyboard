@@ -879,19 +879,32 @@ Lo staff.</string>
                                     <outlet property="delegate" destination="KK1-Nn-m1u" id="Ua8-xG-F2W"/>
                                 </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsr-3I-G54">
+                                <rect key="frame" x="277" y="652" width="82" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZDc-od-agb"/>
+                                </constraints>
+                                <state key="normal" title="Show Route"/>
+                                <connections>
+                                    <action selector="showRoute:" destination="KK1-Nn-m1u" eventType="touchUpInside" id="MOa-gb-ys8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bsr-3I-G54" firstAttribute="trailing" secondItem="28D-iI-MCj" secondAttribute="trailingMargin" id="6hl-Vp-rkd"/>
+                            <constraint firstItem="o0T-AW-u1g" firstAttribute="top" secondItem="bsr-3I-G54" secondAttribute="bottom" constant="8" id="6lo-Bl-J6V"/>
                             <constraint firstAttribute="trailing" secondItem="Yxa-Gg-0Eg" secondAttribute="trailing" id="DfD-dD-VM0"/>
                             <constraint firstItem="o0T-AW-u1g" firstAttribute="top" secondItem="Yxa-Gg-0Eg" secondAttribute="bottom" id="GBd-nc-bEh"/>
                             <constraint firstItem="Yxa-Gg-0Eg" firstAttribute="leading" secondItem="28D-iI-MCj" secondAttribute="leading" id="QMy-aq-9Ol"/>
+                            <constraint firstItem="bsr-3I-G54" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="28D-iI-MCj" secondAttribute="leadingMargin" id="VCn-Lr-CZO"/>
                             <constraint firstItem="Yxa-Gg-0Eg" firstAttribute="top" secondItem="mML-cN-jsu" secondAttribute="bottom" id="ba3-WY-6aE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="q7c-3F-Nx2">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Btf-cD-WyR">
                             <connections>
-                                <action selector="toggleSideMenuBtn:" destination="KK1-Nn-m1u" id="WdC-5V-DWa"/>
+                                <action selector="saveNewCoordinate:" destination="KK1-Nn-m1u" id="Xsx-YX-4Jd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
