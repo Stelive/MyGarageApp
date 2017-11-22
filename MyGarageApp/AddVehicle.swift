@@ -98,7 +98,7 @@ class AddVehicle: UITableViewController, UIImagePickerControllerDelegate, UINavi
             } else {
                 //Update auto
                 //updateAutoOnDB(codAuto: codAuto, nomeAuto:  makeLabel.text!, modelloAuto: modelLabel.text!, annoAuto: yearLabel.text!, targaAuto: targa.text!, cilindrataAuto: Int(cilindrata.text!)!, immatricolazioneAuto: revisioneFromDB){ result in
-                updateAutoOnDB(codAuto: autoFromDB.codAuto, nomeAuto:  makeLabel.text!, modelloAuto: modelLabel.text!, annoAuto: yearLabel.text!, targaAuto: targa.text!, cilindrataAuto: Int(cilindrata.text!)!, immatricolazioneAuto: revisione.text!){ result in
+                updateAutoOnDB(codAuto: autoFromDB.codAuto, nomeAuto:  makeLabel.text!, modelloAuto: modelLabel.text!, annoAuto: yearLabel.text!, targaAuto: targa.text!, cilindrataAuto: Int(cilindrata.text!)!, immatricolazioneAuto: revisione.text!, latitude: Double(autoFromDB.latitude), longitude: Double(autoFromDB.longitude)){ result in
                     print(result)
                     if result {
                             print("Dati modificati con successo")
@@ -232,10 +232,7 @@ class AddVehicle: UITableViewController, UIImagePickerControllerDelegate, UINavi
         
         if segue.identifier == "showLocationSegue"{
             if let nextViewController = segue.destination as? MapView{
-                nextViewController.latitude = autoFromDB.latitude
-                nextViewController.longitude = autoFromDB.longitude
-                nextViewController.make = autoFromDB.make
-                nextViewController.model = autoFromDB.model
+                nextViewController.auto = autoFromDB
             }
         }
     }

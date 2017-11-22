@@ -16,10 +16,7 @@ class MapView: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     var locationManager = CLLocationManager()
     
-    var latitude: Float = 0
-    var longitude: Float = 0
-    var make: String = ""
-    var model: String = ""
+    var auto = Auto()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +27,8 @@ class MapView: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         longPressRecogniser.minimumPressDuration = 1.0 // 1 secondo
         myMaps.addGestureRecognizer(longPressRecogniser)
         
-        let coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude))
-        let vehicleAnnotation = VehicleAnnotation(title: "\(make) \(model)", coordinate: coordinate)
+        let coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(auto.latitude), longitude: CLLocationDegrees(auto.longitude))
+        let vehicleAnnotation = VehicleAnnotation(title: "\(auto.make) \(auto.model)", coordinate: coordinate)
         myMaps.addAnnotation(vehicleAnnotation)
         //37.331039, -122.033864
         myMaps.delegate = self
@@ -51,9 +48,9 @@ class MapView: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         if gestureRecognise.state != .ended { return }
         let touchPoint = gestureRecognise.location(in: self.myMaps)
         let touchMapCoord = myMaps.convert(touchPoint, toCoordinateFrom: myMaps)
-        latitude = Float(touchMapCoord.latitude)
-        longitude = Float(touchMapCoord.longitude)
-        let annotation = VehicleAnnotation(title: "\(make) \(model)", coordinate: touchMapCoord)
+        auto.latitude = Float(touchMapCoord.latitude)
+        auto.longitude = Float(touchMapCoord.longitude)
+        let annotation = VehicleAnnotation(title: "\(auto.make) \(auto.model)", coordinate: touchMapCoord)
         if myMaps.annotations.count > 0 {
             myMaps.removeAnnotations(myMaps.annotations)
         }
@@ -79,11 +76,18 @@ class MapView: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBAction func saveNewCoordinate(_ sender: Any) {
         
-        //save lat and long into db = RIPPPP
-        let alert = UIAlertController(title: "Posizione Salvata!", message: "Abbiamo aggiornato la posizione della tua auto nel db", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-        
+        print(auto)
+        updateAutoOnDB(codAuto: auto.codAuto, nomeAuto: auto.make, modelloAuto: auto.model, annoAuto: String(auto.year), targaAuto: auto.targaFromDB, cilindrataAuto: auto.cilindrataFromDB, immatricolazioneAuto: auto.revisioneFromDB, latitude: Double(auto.latitude), longitude: Double(auto.longitude)) { (result) in
+            if result {
+                let alert = UIAlertController(title: "Posizione Salvata!", message: "Abbiamo aggiornato la posizione della tua auto nel db", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                let alert = UIAlertController(title: "ERRORE nel salvataggio!", message: "Non siamo riusciti a salvare l'a posizione, qualcosa è andato storto non sappiamo cosa. Ciao.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func showRoute(_ sender: Any) {
@@ -97,7 +101,7 @@ class MapView: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         //draw other route
         let request = MKDirectionsRequest()
         request.source = MKMapItem(placemark: MKPlacemark(coordinate: (locationManager.location?.coordinate)!, addressDictionary: nil))
-        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees(latitude), longitude: CLLocationDegrees(longitude)), addressDictionary: nil))
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees(auto.latitude), longitude: CLLocationDegrees(auto.longitude)), addressDictionary: nil))
         request.requestsAlternateRoutes = false
         request.transportType = .walking
         

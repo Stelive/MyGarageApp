@@ -100,7 +100,7 @@ func removeAutoFromDb(imgAuto: String, userId: Int, onComplete:@escaping (  _ re
 }
 
 //func updateAutoOnDB(codAuto: Int, nomeAuto:  String, modelloAuto: String, annoAuto: String, targaAuto: String, cilindrataAuto: Int, immatricolazioneAuto: Date, onComplete:@escaping ( _ result:Bool) -> ()) {
-func updateAutoOnDB(codAuto: Int, nomeAuto:  String, modelloAuto: String, annoAuto: String, targaAuto: String, cilindrataAuto: Int, immatricolazioneAuto: String, onComplete:@escaping ( _ result:Bool) -> ()) {
+func updateAutoOnDB(codAuto: Int, nomeAuto:  String, modelloAuto: String, annoAuto: String, targaAuto: String, cilindrataAuto: Int, immatricolazioneAuto: String, latitude: Double, longitude: Double, onComplete:@escaping ( _ result:Bool) -> ()) {
     
     var success = false
     
@@ -108,7 +108,7 @@ func updateAutoOnDB(codAuto: Int, nomeAuto:  String, modelloAuto: String, annoAu
     request.httpMethod = "POST"
     
     //let postString = "codAuto=\(codAuto)&nomeAuto=\(nomeAuto)&modelloAuto=\(modelloAuto)$annoAuto=\(annoAuto)&cilindrataAuto=\(cilindrataAuto)&immatricolazioneAuto=\(immatricolazioneAuto)&targaAuto=\(targaAuto)"
-    let postString = "codAuto=\(codAuto)&nomeAuto=\(nomeAuto)&modelloAuto=\(modelloAuto)&annoAuto=\(annoAuto)&targaAuto=\(targaAuto)&cilindrataAuto=\(cilindrataAuto)&immatricolazioneAuto=\(immatricolazioneAuto)"
+    let postString = "codAuto=\(codAuto)&nomeAuto=\(nomeAuto)&modelloAuto=\(modelloAuto)&annoAuto=\(annoAuto)&targaAuto=\(targaAuto)&cilindrataAuto=\(cilindrataAuto)&immatricolazioneAuto=\(immatricolazioneAuto)&latitude=\(latitude)&longitude=\(longitude)"
     request.httpBody = postString.data(using: String.Encoding.utf8)
     
     let task = URLSession.shared.dataTask(with: request as URLRequest) {
